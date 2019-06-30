@@ -8,8 +8,7 @@ spec:
   ports:
     - port: 8080
       protocol: TCP
-      targetPort: 8080
   selector:
     app: demo
   sessionAffinity: None
-  type: ClusterIP
+  type: NodePort
