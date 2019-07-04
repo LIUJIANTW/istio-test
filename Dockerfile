@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-slim
+FROM openjdk:8
 
 COPY build/libs/demo-0.0.1-SNAPSHOT.jar  /app/demo-0.0.1-SNAPSHOT.jar
 
