@@ -1,6 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.1.6.RELEASE'
 	id 'java'
+	id "org.sonarqube" version "2.7"
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -16,4 +17,10 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web-services'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+sonarqube {
+	properties {
+		property "sonar.host.url", "http://18.138.46.187:9000"
+	}
 }
